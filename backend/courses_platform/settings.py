@@ -28,6 +28,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     "courses-platform-backend.onrender.com",
+    "robotics-course.onrender.com",
+    ".onrender.com",
     "localhost",
     "127.0.0.1",
 ]
