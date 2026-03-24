@@ -11,7 +11,7 @@ import ReactMarkdown from "react-markdown";
 const LessonPage = () => {
   const navigate = useNavigate();
   const params = useParams();
-  const { courseId, lessonId } = params;
+  const { lessonId } = params;
 
   const [data, setData] = useState();
   const [testData, setTestData] = useState(null);

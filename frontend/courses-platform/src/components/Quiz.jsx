@@ -99,6 +99,7 @@ const Quiz = ({ quizData }) => {
         clearInterval(timerRef.current);
       }
     };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [timeRemaining, quizSubmitted]);
 
   // Validate if quiz data is available
