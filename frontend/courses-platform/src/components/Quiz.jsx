@@ -354,7 +354,7 @@ export default Quiz;
 const QuizContainer = styled.div`
   width: 100%;
   margin: 20px 0;
-  background: white;
+  background: #1e293b;
   padding: 25px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -363,18 +363,18 @@ const QuizContainer = styled.div`
 
 const QuizHeader = styled.div`
   margin-bottom: 25px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #334155;
   padding-bottom: 15px;
 `;
 
 const QuizTitle = styled.h2`
   font-size: 1.8rem;
-  color: #3066be;
+  color: #0ea5e9;
   margin-bottom: 10px;
 `;
 
 const QuizDescription = styled.p`
-  color: #666;
+  color: #94a3b8;
   font-size: 1rem;
   margin-bottom: 15px;
 `;
@@ -388,13 +388,13 @@ const QuizInfoBar = styled.div`
 
 const QuizProgress = styled.div`
   font-weight: 500;
-  color: #555;
+  color: #94a3b8;
 `;
 
 const QuizTimer = styled.div`
   font-weight: 700;
   font-size: 1.1rem;
-  color: #3066be;
+  color: #0ea5e9;
 
   &.warning {
     color: #e74c3c;
@@ -416,27 +416,27 @@ const QuizTimer = styled.div`
 
 const QuestionContainer = styled.div`
   margin-bottom: 25px;
-  background-color: #f9fafc;
+  background-color: #0f172a;
   padding: 20px;
   border-radius: 10px;
 `;
 
 const QuestionNumber = styled.div`
   font-size: 1.1rem;
-  color: #666;
+  color: #94a3b8;
   margin-bottom: 10px;
 `;
 
 const QuestionText = styled.h3`
   font-size: 1.3rem;
-  color: #333;
+  color: #e2e8f0;
   margin-bottom: 15px;
   line-height: 1.4;
 `;
 
 const QuestionPoints = styled.div`
   font-size: 0.9rem;
-  color: #3066be;
+  color: #0ea5e9;
   margin-bottom: 20px;
   font-weight: 500;
 `;
@@ -450,18 +450,18 @@ const ChoicesContainer = styled.div`
 
 const ChoiceItem = styled.div`
   padding: 12px 15px;
-  border: 1px solid ${(props) => (props.isSelected ? "#3066be" : "#ddd")};
+  border: 1px solid ${(props) => (props.isSelected ? "#0ea5e9" : "#334155")};
   border-radius: 8px;
   cursor: pointer;
   display: flex;
   align-items: center;
   transition: all 0.2s ease;
-  background-color: ${(props) => (props.isSelected ? "#f0f5ff" : "white")};
+  background-color: ${(props) => (props.isSelected ? "rgba(14, 165, 233, 0.1)" : "transparent")};
   width: auto;
 
   &:hover {
-    background-color: ${(props) => (props.isSelected ? "#f0f5ff" : "#f9f9f9")};
-    border-color: ${(props) => (props.isSelected ? "#3066be" : "#bbb")};
+    background-color: ${(props) => (props.isSelected ? "rgba(14, 165, 233, 0.1)" : "#334155")};
+    border-color: ${(props) => (props.isSelected ? "#0ea5e9" : "#bbb")};
   }
 `;
 
@@ -484,20 +484,21 @@ const OpenEndedInput = styled.textarea`
   height: 80px;
   max-height: 120px;
   padding: 12px 15px;
-  border: 1px solid #ddd;
+  border: 1px solid #334155;
   border-radius: 8px;
   font-family: inherit;
   font-size: 1rem;
   resize: vertical;
   line-height: 1.5;
-  background-color: #fff;
+  background-color: #0f172a;
+  color: #e2e8f0;
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
 
   &:focus {
     outline: none;
-    border-color: #3066be;
-    box-shadow: 0 0 0 2px rgba(48, 102, 190, 0.1);
+    border-color: #0ea5e9;
+    box-shadow: 0 0 0 2px rgba(14, 165, 233, 0.1);
   }
 
   &::placeholder {
@@ -512,9 +513,9 @@ const NavigationContainer = styled.div`
 `;
 
 const NavButton = styled.button`
-  background-color: white;
-  color: #3066be;
-  border: 1px solid #3066be;
+  background-color: #1e293b;
+  color: #0ea5e9;
+  border: 1px solid #0ea5e9;
   padding: 10px 20px;
   border-radius: 5px;
   font-weight: 500;
@@ -522,7 +523,7 @@ const NavButton = styled.button`
   transition: all 0.2s;
 
   &:hover:not(:disabled) {
-    background-color: #f0f5ff;
+    background-color: rgba(14, 165, 233, 0.1);
   }
 
   &:disabled {
@@ -532,7 +533,7 @@ const NavButton = styled.button`
 `;
 
 const SubmitButton = styled.button`
-  background-color: #3066be;
+  background-color: #0ea5e9;
   color: white;
   border: none;
   padding: 10px 25px;
@@ -542,7 +543,7 @@ const SubmitButton = styled.button`
   transition: all 0.2s;
 
   &:hover {
-    background-color: #254d95;
+    background-color: #0284c7;
     transform: translateY(-2px);
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
   }
@@ -555,7 +556,7 @@ const ResultsContainer = styled.div`
 
 const ResultsHeader = styled.h2`
   font-size: 2rem;
-  color: #333;
+  color: #e2e8f0;
   margin-bottom: 20px;
 `;
 
@@ -574,7 +575,7 @@ const ResultsFailure = styled.div`
 `;
 
 const ResultsDetails = styled.div`
-  background-color: #f9f9f9;
+  background-color: #0f172a;
   border-radius: 8px;
   padding: 20px;
   margin: 20px auto;
@@ -591,11 +592,11 @@ const ResultItem = styled.div`
 
 const ResultValue = styled.span`
   font-weight: 700;
-  color: #3066be;
+  color: #0ea5e9;
 `;
 
 const ReturnButton = styled.button`
-  background-color: #3066be;
+  background-color: #0ea5e9;
   color: white;
   border: none;
   padding: 12px 25px;
@@ -607,7 +608,7 @@ const ReturnButton = styled.button`
   transition: all 0.2s;
 
   &:hover {
-    background-color: #254d95;
+    background-color: #0284c7;
   }
 `;
 
@@ -620,12 +621,12 @@ const LoadingContainer = styled.div`
 
 const LoadingText = styled.div`
   font-size: 1.2rem;
-  color: #666;
+  color: #94a3b8;
 `;
 
 const ErrorMessage = styled.div`
   color: #e74c3c;
-  background-color: #fde8e7;
+  background-color: rgba(239, 68, 68, 0.1);
   padding: 15px;
   border-radius: 5px;
   text-align: center;

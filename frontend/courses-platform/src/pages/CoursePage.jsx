@@ -4,7 +4,7 @@ import styled from "styled-components";
 import Header from "../components/Header";
 import { courseService } from "../services";
 import useAuth from "../hooks/useAuth";
-import { AIChatButton } from "../components/index";
+// import { AIChatButton } from "../components/index";
 
 const CoursePage = () => {
   const navigate = useNavigate();
@@ -337,7 +337,7 @@ const CoursePage = () => {
           </ModalOverlay>
         )}
       </Container>
-      <AIChatButton courseId={id} courseName={title} />
+      {/* <AIChatButton courseId={id} courseName={title} /> */}
     </>
   );
 };
@@ -350,7 +350,7 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 40px 20px;
-  background: #f9f9f9;
+  background: #0f172a;
   min-height: calc(100vh - 70px);
   max-width: 1200px;
   margin: 0 auto;
@@ -363,18 +363,18 @@ const BackButton = styled.button`
   left: 20px;
   display: flex;
   align-items: center;
-  background: #ffffff;
+  background: #1e293b;
   border: none;
   padding: 10px 15px;
   border-radius: 5px;
   font-weight: 500;
-  color: #3066be;
+  color: #0ea5e9;
   cursor: pointer;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: all 0.2s ease;
 
   &:hover {
-    background: #f0f5ff;
+    background: #334155;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
     transform: translateY(-1px);
   }
@@ -393,12 +393,12 @@ const CourseHeader = styled.div`
 
 const CourseTitle = styled.h1`
   font-size: 2.5rem;
-  color: #3066be;
+  color: #0ea5e9;
   margin-bottom: 10px;
 `;
 
 const CourseDescription = styled.p`
-  color: #666;
+  color: #94a3b8;
   font-size: 1.1rem;
   max-width: 800px;
   margin: 0 auto;
@@ -411,7 +411,7 @@ const LessonsSection = styled.div`
 
 const SectionTitle = styled.h2`
   font-size: 1.8rem;
-  color: #333;
+  color: #e2e8f0;
   margin-bottom: 20px;
   position: relative;
 
@@ -422,7 +422,7 @@ const SectionTitle = styled.h2`
     left: 0;
     width: 50px;
     height: 3px;
-    background-color: #119da4;
+    background-color: #06b6d4;
   }
 `;
 
@@ -433,7 +433,7 @@ const LessonList = styled.ul`
 `;
 
 const LessonItem = styled.li`
-  background: white;
+  background: #1e293b;
   margin-bottom: 15px;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
@@ -454,7 +454,7 @@ const LessonItem = styled.li`
 `;
 
 const LessonNumber = styled.div`
-  background: #3066be;
+  background: #0ea5e9;
   color: white;
   width: 35px;
   height: 35px;
@@ -473,18 +473,18 @@ const LessonContent = styled.div`
 
 const LessonTitle = styled.h3`
   margin: 0 0 5px 0;
-  color: #333;
+  color: #e2e8f0;
   font-size: 1.2rem;
 `;
 
 const LessonDescription = styled.p`
   margin: 0;
-  color: #666;
+  color: #94a3b8;
   font-size: 0.9rem;
 `;
 
 const LessonArrow = styled.span`
-  color: #3066be;
+  color: #0ea5e9;
   font-size: 1.5rem;
   opacity: 0.7;
   transition: opacity 0.2s, transform 0.2s;
@@ -498,9 +498,9 @@ const LessonArrow = styled.span`
 const NoLessons = styled.div`
   padding: 30px;
   text-align: center;
-  background: white;
+  background: #1e293b;
   border-radius: 8px;
-  color: #666;
+  color: #94a3b8;
 `;
 
 const CourseCompletionSection = styled.div`
@@ -508,7 +508,7 @@ const CourseCompletionSection = styled.div`
   max-width: 900px;
   margin-top: 50px;
   padding: 30px;
-  background-color: white;
+  background-color: #1e293b;
   border-radius: 10px;
   text-align: center;
   display: flex;
@@ -542,7 +542,7 @@ const CompletedIcon = styled.span`
 `;
 
 const ProgressIndicator = styled.div`
-  color: #666;
+  color: #94a3b8;
   font-size: 16px;
 `;
 
@@ -578,7 +578,7 @@ const CompleteCourseButton = styled.button`
 
 const ViewCertificateButton = styled.button`
   padding: 14px 30px;
-  background-color: #3066be;
+  background-color: #0ea5e9;
   color: white;
   border: none;
   border-radius: 6px;
@@ -589,7 +589,7 @@ const ViewCertificateButton = styled.button`
   box-shadow: 0 3px 6px rgba(48, 102, 190, 0.2);
 
   &:hover {
-    background-color: #254d95;
+    background-color: #0284c7;
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(48, 102, 190, 0.3);
   }
@@ -610,7 +610,7 @@ const ModalOverlay = styled.div`
 `;
 
 const CertificateModal = styled.div`
-  background: white;
+  background: #1e293b;
   border-radius: 12px;
   width: 90%;
   max-width: 900px;
@@ -693,7 +693,7 @@ const CertificateLogo = styled.div`
 const LogoText = styled.h3`
   font-family: "Georgia", serif;
   font-size: 24px;
-  color: #3066be;
+  color: #0ea5e9;
   letter-spacing: 1px;
 `;
 
@@ -738,7 +738,7 @@ const CertificatePresentation = styled.p`
 const CertificateStudentName = styled.h2`
   font-family: "Brush Script MT", cursive;
   font-size: 48px;
-  color: #3066be;
+  color: #0ea5e9;
   margin: 15px 0;
   letter-spacing: 1px;
 `;
@@ -842,7 +842,7 @@ const CertificateControls = styled.div`
 
 const CertificateDownload = styled.button`
   padding: 12px 25px;
-  background-color: #3066be;
+  background-color: #0ea5e9;
   color: white;
   border: none;
   border-radius: 5px;
@@ -851,7 +851,7 @@ const CertificateDownload = styled.button`
   transition: all 0.2s;
 
   &:hover {
-    background-color: #254d95;
+    background-color: #0284c7;
     transform: translateY(-2px);
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
   }
@@ -862,12 +862,12 @@ const LoadingContainer = styled.div`
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: #f9f9f9;
+  background: #0f172a;
 `;
 
 const LoadingText = styled.p`
   font-size: 18px;
-  color: #333;
+  color: #94a3b8;
 `;
 
 const ErrorContainer = styled.div`
@@ -876,7 +876,7 @@ const ErrorContainer = styled.div`
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: #f9f9f9;
+  background: #0f172a;
 `;
 
 const ErrorText = styled.p`
@@ -887,7 +887,7 @@ const ErrorText = styled.p`
 
 const ErrorButton = styled.button`
   padding: 10px 20px;
-  background: #3066be;
+  background: #0ea5e9;
   color: white;
   border: none;
   border-radius: 5px;
@@ -896,7 +896,7 @@ const ErrorButton = styled.button`
   transition: background 0.2s;
 
   &:hover {
-    background: #254d95;
+    background: #0284c7;
   }
 `;
 

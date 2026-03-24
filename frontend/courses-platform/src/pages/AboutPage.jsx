@@ -10,7 +10,7 @@ const AboutPage = () => {
       <HeroSection>
         <HeroContent>
           <BrandTitle>
-            Oqu<BrandAccent>Space</BrandAccent>
+            Robo<BrandAccent>Mentor</BrandAccent>
           </BrandTitle>
           <HeroTitle>Біз туралы</HeroTitle>
           <HeroSubtitle>
@@ -23,7 +23,7 @@ const AboutPage = () => {
         <ContentSection>
           <SectionTitle>Біздің миссиямыз</SectionTitle>
           <SectionText>
-            OquSpace платформасы – бұл қазақстандықтарға сапалы білім беру
+            RoboMentor платформасы – бұл қазақстандықтарға сапалы білім беру
             материалдарын ұсыну арқылы ұлттық білім беру деңгейін арттыруға
             бағытталған инновациялық жоба. Біз әрбір адамға, мекен-жайына,
             материалдық жағдайына және басқа да факторларға қарамастан, сапалы
@@ -32,7 +32,7 @@ const AboutPage = () => {
           <SectionText>
             Біздің пайымдауымызша, адамдардың білім алуға деген қолжетімділігі
             мен мүмкіндіктерін кеңейту – еліміздің жарқын болашағының кепілі.
-            Сондықтан OquSpace командасы оқушылар мен студенттерге, сондай-ақ өз
+            Сондықтан RoboMentor командасы оқушылар мен студенттерге, сондай-ақ өз
             білімін жетілдіргісі келетін ересектерге арналған білім беру
             бағдарламаларының ауқымды каталогын жасауға күш салып келеді.
           </SectionText>
@@ -42,7 +42,7 @@ const AboutPage = () => {
           <SectionTitle>Біздің құндылықтарымыз</SectionTitle>
           <ValuesGrid>
             <ValueCard>
-              <ValueIcon>🌟</ValueIcon>
+              <ValueIcon>◆</ValueIcon>
               <ValueTitle>Сапа</ValueTitle>
               <ValueDescription>
                 Біз ең жоғары сапалы білім беру контентін ұсынамыз, ол қатаң
@@ -50,7 +50,7 @@ const AboutPage = () => {
               </ValueDescription>
             </ValueCard>
             <ValueCard>
-              <ValueIcon>🔍</ValueIcon>
+              <ValueIcon>◇</ValueIcon>
               <ValueTitle>Қолжетімділік</ValueTitle>
               <ValueDescription>
                 Біз әртүрлі білім алушыларға қолжетімді болу үшін материалдарды
@@ -58,7 +58,7 @@ const AboutPage = () => {
               </ValueDescription>
             </ValueCard>
             <ValueCard>
-              <ValueIcon>🚀</ValueIcon>
+              <ValueIcon>▲</ValueIcon>
               <ValueTitle>Инновация</ValueTitle>
               <ValueDescription>
                 Біз үнемі жаңа технологияларды зерттеп, оқу процесін жақсарту
@@ -66,7 +66,7 @@ const AboutPage = () => {
               </ValueDescription>
             </ValueCard>
             <ValueCard>
-              <ValueIcon>🤝</ValueIcon>
+              <ValueIcon>⬡</ValueIcon>
               <ValueTitle>Қоғамдастық</ValueTitle>
               <ValueDescription>
                 Біз білім алушылар мен оқытушылар арасындағы ынтымақтастықты
@@ -81,15 +81,15 @@ const AboutPage = () => {
         <SectionTitle>Бізбен байланысыңыз</SectionTitle>
         <ContactInfo>
           <ContactItem>
-            <ContactIcon>📧</ContactIcon>
-            <ContactText>info@oquspace.kz</ContactText>
+            <ContactIcon>@</ContactIcon>
+            <ContactText>info@robomentor.kz</ContactText>
           </ContactItem>
           <ContactItem>
-            <ContactIcon>📱</ContactIcon>
+            <ContactIcon>☏</ContactIcon>
             <ContactText>+7 (7XX) XXX-XXXX</ContactText>
           </ContactItem>
           <ContactItem>
-            <ContactIcon>📍</ContactIcon>
+            <ContactIcon>⌖</ContactIcon>
             <ContactText>Алматы қ., Қазақстан</ContactText>
           </ContactItem>
         </ContactInfo>
@@ -99,7 +99,7 @@ const AboutPage = () => {
       <Footer>
         <FooterContent>
           <FooterBrand>
-            Oqu<BrandAccent>Space</BrandAccent>
+            Robo<BrandAccent>Mentor</BrandAccent>
           </FooterBrand>
           <FooterLinks>
             <FooterLink to="/about">Біз туралы</FooterLink>
@@ -108,7 +108,7 @@ const AboutPage = () => {
             <FooterLink to="/privacy">Құпиялылық саясаты</FooterLink>
           </FooterLinks>
           <FooterCopyright>
-            © {new Date().getFullYear()} OquSpace. Барлық құқықтар қорғалған.
+            © {new Date().getFullYear()} RoboMentor. Барлық құқықтар қорғалған.
           </FooterCopyright>
         </FooterContent>
       </Footer>
@@ -123,11 +123,11 @@ const PageWrapper = styled.div`
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: #f8fafc;
+  background-color: #0f172a;
 `;
 
 const HeroSection = styled.section`
-  background: linear-gradient(135deg, #3066be 0%, #119da4 100%);
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
   padding: 80px 20px;
   color: white;
   text-align: center;
@@ -145,7 +145,7 @@ const BrandTitle = styled.h1`
 `;
 
 const BrandAccent = styled.span`
-  color: #f0f0f0;
+  color: #06b6d4;
 `;
 
 const HeroTitle = styled.h2`
@@ -170,16 +170,16 @@ const MainContent = styled.main`
 
 const ContentSection = styled.section`
   margin-bottom: 60px;
-  background-color: white;
+  background-color: #1e293b;
   border-radius: 8px;
   padding: 40px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 `;
 
 const SectionTitle = styled.h3`
   font-size: 2rem;
   font-weight: 700;
-  color: #2d3748;
+  color: #e2e8f0;
   margin-bottom: 1.5rem;
   text-align: center;
 `;
@@ -187,7 +187,7 @@ const SectionTitle = styled.h3`
 const SectionText = styled.p`
   font-size: 1.1rem;
   line-height: 1.8;
-  color: #4a5568;
+  color: #94a3b8;
   margin-bottom: 1.5rem;
 `;
 
@@ -203,10 +203,10 @@ const ValuesGrid = styled.div`
 `;
 
 const ValueCard = styled.div`
-  background-color: white;
+  background-color: #1e293b;
   border-radius: 8px;
   padding: 30px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   text-align: center;
   transition: transform 0.3s ease;
 
@@ -218,23 +218,24 @@ const ValueCard = styled.div`
 const ValueIcon = styled.div`
   font-size: 3rem;
   margin-bottom: 15px;
+  color: #0ea5e9;
 `;
 
 const ValueTitle = styled.h4`
   font-size: 1.25rem;
   font-weight: 700;
-  color: #2d3748;
+  color: #e2e8f0;
   margin-bottom: 15px;
 `;
 
 const ValueDescription = styled.p`
   font-size: 0.95rem;
   line-height: 1.6;
-  color: #4a5568;
+  color: #94a3b8;
 `;
 
 const ContactSection = styled.section`
-  background-color: #2d3748;
+  background-color: #1e293b;
   color: white;
   padding: 80px 20px;
   text-align: center;
@@ -260,11 +261,11 @@ const ContactIcon = styled.span`
 `;
 
 const ContactText = styled.span`
-  color: #e2e8f0;
+  color: #94a3b8;
 `;
 
 const ContactButton = styled.button`
-  background-color: #3066be;
+  background-color: #0ea5e9;
   color: white;
   font-size: 1rem;
   font-weight: 600;
@@ -275,12 +276,12 @@ const ContactButton = styled.button`
   transition: background-color 0.2s ease;
 
   &:hover {
-    background-color: #2553a8;
+    background-color: #0284c7;
   }
 `;
 
 const Footer = styled.footer`
-  background-color: #1a202c;
+  background-color: #020617;
   color: white;
   padding: 40px 20px;
   margin-top: auto;
@@ -309,7 +310,7 @@ const FooterLinks = styled.div`
 `;
 
 const FooterLink = styled(Link)`
-  color: #a0aec0;
+  color: #64748b;
   text-decoration: none;
   transition: color 0.2s ease;
 
@@ -319,6 +320,6 @@ const FooterLink = styled(Link)`
 `;
 
 const FooterCopyright = styled.div`
-  color: #718096;
+  color: #475569;
   font-size: 0.9rem;
 `;

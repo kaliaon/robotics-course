@@ -44,7 +44,7 @@ const AIChatButton = ({ courseId, lessonId, courseName, lessonTitle }) => {
     const safetySettings = getSafetySettings();
 
     // Build context for the AI
-    const systemContext = `Сіз OquSpace онлайн оқу платформасының AI көмекшісісіз. Сіздің міндетіңіз - студенттерге олардың оқу процесінде көмектесу.
+    const systemContext = `Сіз RoboMentor онлайн оқу платформасының AI көмекшісісіз. Сіздің міндетіңіз - студенттерге олардың оқу процесінде көмектесу.
 
 Ағымдағы контекст:
 ${courseName ? `- Курс: ${courseName}` : ""}
@@ -271,7 +271,7 @@ ${lessonId ? `- Сабақ ID: ${lessonId}` : ""}
       )}
       <ChatButtonContainer>
         <ChatButtonCircle onClick={toggleChat}>
-          <ChatIcon>💬</ChatIcon>
+          <ChatIcon>⌘</ChatIcon>
           {!apiKeyConfigured && <ApiKeyIndicator>!</ApiKeyIndicator>}
         </ChatButtonCircle>
       </ChatButtonContainer>
@@ -293,10 +293,10 @@ const ChatButtonCircle = styled.button`
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background-color: #3066be;
+  background-color: #0ea5e9;
   color: white;
   border: none;
-  box-shadow: 0 4px 12px rgba(48, 102, 190, 0.3);
+  box-shadow: 0 4px 12px rgba(14, 165, 233, 0.3);
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -304,14 +304,14 @@ const ChatButtonCircle = styled.button`
   transition: all 0.2s ease;
 
   &:hover {
-    background-color: #254d95;
+    background-color: #0284c7;
     transform: translateY(-2px);
-    box-shadow: 0 6px 16px rgba(48, 102, 190, 0.4);
+    box-shadow: 0 6px 16px rgba(14, 165, 233, 0.4);
   }
 
   &:active {
     transform: translateY(0);
-    box-shadow: 0 4px 8px rgba(48, 102, 190, 0.3);
+    box-shadow: 0 4px 8px rgba(14, 165, 233, 0.3);
   }
 `;
 
@@ -325,7 +325,7 @@ const ChatContainer = styled.div`
   right: 30px;
   width: 350px;
   height: 500px;
-  background-color: white;
+  background-color: #1e293b;
   border-radius: 12px;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
   display: flex;
@@ -348,7 +348,7 @@ const ChatContainer = styled.div`
 
 const ChatHeader = styled.div`
   padding: 16px;
-  background-color: #3066be;
+  background-color: #0ea5e9;
   color: white;
   font-weight: 600;
   font-size: 16px;
@@ -395,7 +395,7 @@ const MessagesContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 12px;
-  background-color: #f8f9fa;
+  background-color: #0f172a;
 `;
 
 const ConfigurationMessage = styled.div`
@@ -429,12 +429,12 @@ const ConfigPath = styled.code`
 `;
 
 const WelcomeMessage = styled.div`
-  background-color: #e7f0ff;
+  background-color: rgba(14, 165, 233, 0.1);
   padding: 14px;
   border-radius: 12px;
   align-self: center;
   max-width: 85%;
-  color: #333;
+  color: #e2e8f0;
   text-align: center;
   margin: 15px 0;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
@@ -451,17 +451,17 @@ const Message = styled.div`
   ${(props) =>
     props.sender === "user"
       ? `
-    background-color: #3066be;
+    background-color: #0ea5e9;
     align-self: flex-end;
     border-bottom-right-radius: 4px;
     color: white;
-    box-shadow: 0 1px 2px rgba(48, 102, 190, 0.2);
+    box-shadow: 0 1px 2px rgba(14, 165, 233, 0.2);
   `
       : `
-    background-color: ${props.isError ? "#fee" : "white"};
+    background-color: ${props.isError ? "#fee" : "#1e293b"};
     align-self: flex-start;
     border-bottom-left-radius: 4px;
-    color: ${props.isError ? "#d63384" : "#333"};
+    color: ${props.isError ? "#d63384" : "#e2e8f0"};
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     border-left: ${props.isError ? "3px solid #d63384" : "none"};
   `}
@@ -470,35 +470,36 @@ const Message = styled.div`
 const InputForm = styled.form`
   display: flex;
   padding: 12px 15px;
-  border-top: 1px solid #e0e0e0;
-  background-color: #fff;
+  border-top: 1px solid #334155;
+  background-color: #1e293b;
   align-items: center;
 `;
 
 const ChatInput = styled.input`
   flex: 1;
   padding: 12px 16px;
-  border: 1px solid #e0e0e0;
+  border: 1px solid #334155;
   border-radius: 24px;
   outline: none;
   font-size: 14px;
-  background-color: #f5f5f5;
+  background-color: #0f172a;
+  color: #e2e8f0;
   transition: all 0.2s;
 
   &:focus {
-    border-color: #3066be;
-    background-color: white;
-    box-shadow: 0 0 0 2px rgba(48, 102, 190, 0.1);
+    border-color: #0ea5e9;
+    background-color: #1e293b;
+    box-shadow: 0 0 0 2px rgba(14, 165, 233, 0.1);
   }
 
   &:disabled {
-    background-color: #e9ecef;
+    background-color: #334155;
     color: #6c757d;
   }
 `;
 
 const SendButton = styled.button`
-  background-color: ${(props) => (props.disabled ? "#ccc" : "#3066be")};
+  background-color: ${(props) => (props.disabled ? "#ccc" : "#0ea5e9")};
   color: white;
   border: none;
   border-radius: 50%;
@@ -512,7 +513,7 @@ const SendButton = styled.button`
   transition: all 0.2s;
 
   &:hover {
-    background-color: ${(props) => (props.disabled ? "#ccc" : "#254d95")};
+    background-color: ${(props) => (props.disabled ? "#ccc" : "#0284c7")};
     transform: ${(props) => (props.disabled ? "none" : "scale(1.05)")};
   }
 
@@ -550,7 +551,7 @@ const LoadingDots = styled.div`
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background-color: #3066be;
+    background-color: #0ea5e9;
     animation: bounce 1.4s ease-in-out infinite both;
 
     &:nth-child(1) {

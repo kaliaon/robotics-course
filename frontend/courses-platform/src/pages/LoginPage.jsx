@@ -38,7 +38,7 @@ const LoginPage = () => {
         <FormSection>
           <LogoContainer>
             <LogoText>
-              Oqu<SpaceText>Space</SpaceText>
+              Robo<SpaceText>Mentor</SpaceText>
             </LogoText>
             <LogoSubtext>Білім әлеміне қош келдіңіз</LogoSubtext>
           </LogoContainer>
@@ -111,15 +111,15 @@ const PageContainer = styled.div`
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
   padding: 20px;
 `;
 
 const ContentWrapper = styled.div`
   display: flex;
-  background: white;
+  background: #1e293b;
   border-radius: 20px;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
   width: 100%;
   max-width: 1000px;
   overflow: hidden;
@@ -147,30 +147,30 @@ const LogoContainer = styled.div`
 const LogoText = styled.h1`
   font-size: 2.2rem;
   font-weight: 700;
-  color: #3066be;
+  color: #0ea5e9;
   margin: 0;
 `;
 
 const SpaceText = styled.span`
-  color: #119da4;
+  color: #06b6d4;
 `;
 
 const LogoSubtext = styled.p`
   font-size: 1rem;
-  color: #5d6970;
+  color: #94a3b8;
   margin: 0;
 `;
 
 const Title = styled.h2`
   font-size: 1.75rem;
-  color: #2d3748;
+  color: #e2e8f0;
   margin-bottom: 0.5rem;
   font-weight: 600;
 `;
 
 const Subtitle = styled.p`
   font-size: 1rem;
-  color: #718096;
+  color: #64748b;
   margin-bottom: 2rem;
 `;
 
@@ -189,24 +189,26 @@ const InputGroup = styled.div`
 const Label = styled.label`
   font-size: 0.875rem;
   font-weight: 500;
-  color: #4a5568;
+  color: #94a3b8;
 `;
 
 const Input = styled.input`
   padding: 0.75rem 1rem;
-  border: 1px solid #e2e8f0;
+  border: 1px solid #334155;
   border-radius: 8px;
   font-size: 1rem;
   transition: all 0.2s ease;
+  background: #0f172a;
+  color: #e2e8f0;
 
   &:focus {
     outline: none;
-    border-color: #3066be;
-    box-shadow: 0 0 0 3px rgba(48, 102, 190, 0.1);
+    border-color: #0ea5e9;
+    box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.1);
   }
 
   &::placeholder {
-    color: #a0aec0;
+    color: #64748b;
   }
 `;
 
@@ -224,17 +226,17 @@ const RememberMe = styled.div`
 `;
 
 const Checkbox = styled.input`
-  accent-color: #3066be;
+  accent-color: #0ea5e9;
 `;
 
 const CheckboxLabel = styled.label`
   font-size: 0.875rem;
-  color: #4a5568;
+  color: #94a3b8;
 `;
 
 const ForgotPassword = styled.a`
   font-size: 0.875rem;
-  color: #3066be;
+  color: #0ea5e9;
   text-decoration: none;
   cursor: pointer;
 
@@ -244,7 +246,7 @@ const ForgotPassword = styled.a`
 `;
 
 const Button = styled.button`
-  background: #3066be;
+  background: #0ea5e9;
   color: white;
   border: none;
   border-radius: 8px;
@@ -255,9 +257,9 @@ const Button = styled.button`
   transition: all 0.2s ease;
 
   &:hover {
-    background: #1d4996;
+    background: #0284c7;
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(48, 102, 190, 0.2);
+    box-shadow: 0 4px 12px rgba(14, 165, 233, 0.2);
   }
 
   &:active {
@@ -268,12 +270,12 @@ const Button = styled.button`
 const Footer = styled.p`
   text-align: center;
   margin-top: 2rem;
-  color: #718096;
+  color: #64748b;
   font-size: 0.875rem;
 `;
 
 const StyledLink = styled(Link)`
-  color: #3066be;
+  color: #0ea5e9;
   text-decoration: none;
   font-weight: 500;
 
@@ -284,7 +286,7 @@ const StyledLink = styled(Link)`
 
 const IllustrationSection = styled.div`
   flex: 1;
-  background: #f8fafc;
+  background: #0f172a;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -302,11 +304,11 @@ const Illustration = styled.img`
 `;
 
 const ErrorMessage = styled.div`
-  color: #e53e3e;
-  background-color: #fff5f5;
+  color: #ef4444;
+  background-color: rgba(239, 68, 68, 0.1);
   padding: 0.75rem;
   border-radius: 8px;
-  border-left: 4px solid #e53e3e;
+  border-left: 4px solid #ef4444;
   margin-bottom: 1rem;
   font-size: 0.875rem;
 `;

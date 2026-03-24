@@ -22,7 +22,7 @@ const Header = () => {
       <HeaderContainer>
         <LogoSection>
           <LogoLink to="/">
-            Oqu<LogoAccent>Space</LogoAccent>
+            Robo<LogoAccent>Mentor</LogoAccent>
           </LogoLink>
         </LogoSection>
 
@@ -57,12 +57,12 @@ const Header = () => {
                   </UserInfo>
                   <UserMenuDivider />
                   <UserMenuItem to="/profile">
-                    <MenuIcon>👤</MenuIcon>
+                    <MenuIcon>—</MenuIcon>
                     Менің профилім
                   </UserMenuItem>
                   <UserMenuDivider />
                   <UserMenuButton onClick={handleLogout}>
-                    <MenuIcon>🚪</MenuIcon>
+                    <MenuIcon>→</MenuIcon>
                     Шығу
                   </UserMenuButton>
                 </UserMenu>
@@ -84,8 +84,8 @@ export default Header;
 
 // Styled Components
 const HeaderWrapper = styled.header`
-  background-color: white;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  background-color: #0f172a;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -112,14 +112,14 @@ const LogoSection = styled.div`
 const LogoLink = styled(Link)`
   font-size: 1.5rem;
   font-weight: 800;
-  color: #3066be;
+  color: #0ea5e9;
   text-decoration: none;
   display: flex;
   align-items: center;
 `;
 
 const LogoAccent = styled.span`
-  color: #119da4;
+  color: #06b6d4;
 `;
 
 const NavSection = styled.nav`
@@ -144,8 +144,8 @@ const NavLinks = styled.ul`
     left: 0;
     right: 0;
     flex-direction: column;
-    background-color: white;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+    background-color: #0f172a;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
     padding: 0;
     max-height: ${(props) => (props.open ? "300px" : "0")};
     overflow: hidden;
@@ -163,7 +163,7 @@ const NavItem = styled.li`
 
 const NavLink = styled(Link)`
   text-decoration: none;
-  color: #4a5568;
+  color: #94a3b8;
   font-weight: 500;
   font-size: 1rem;
   padding: 10px 0;
@@ -172,7 +172,7 @@ const NavLink = styled(Link)`
   transition: color 0.2s;
 
   &:hover {
-    color: #3066be;
+    color: #0ea5e9;
   }
 
   &:after {
@@ -182,7 +182,7 @@ const NavLink = styled(Link)`
     left: 0;
     width: 0;
     height: 2px;
-    background-color: #3066be;
+    background-color: #0ea5e9;
     transition: width 0.3s;
   }
 
@@ -198,7 +198,7 @@ const NavLink = styled(Link)`
     }
 
     &:hover {
-      background-color: #f8fafc;
+      background-color: #1e293b;
     }
   }
 `;
@@ -226,7 +226,7 @@ const MobileMenuIcon = styled.div`
     position: absolute;
     height: 2px;
     width: 100%;
-    background: #4a5568;
+    background: #94a3b8;
     border-radius: 2px;
     transition: transform 0.2s ease, opacity 0.2s ease;
 
@@ -259,31 +259,31 @@ const AuthButtons = styled.div`
 
 const LoginButton = styled(Link)`
   padding: 8px 16px;
-  color: #3066be;
-  border: 1px solid #3066be;
+  color: #0ea5e9;
+  border: 1px solid #0ea5e9;
   border-radius: 4px;
   font-weight: 500;
   text-decoration: none;
   transition: background-color 0.2s, color 0.2s;
 
   &:hover {
-    background-color: #3066be;
+    background-color: #0ea5e9;
     color: white;
   }
 `;
 
 const SignupButton = styled(Link)`
   padding: 8px 16px;
-  background-color: #3066be;
+  background-color: #0ea5e9;
   color: white;
-  border: 1px solid #3066be;
+  border: 1px solid #0ea5e9;
   border-radius: 4px;
   font-weight: 500;
   text-decoration: none;
   transition: background-color 0.2s;
 
   &:hover {
-    background-color: #254e99;
+    background-color: #0284c7;
   }
 `;
 
@@ -300,7 +300,7 @@ const UserDropdown = styled.div`
 const UserAvatar = styled.div`
   width: 40px;
   height: 40px;
-  background: linear-gradient(45deg, #3066be, #119da4);
+  background: linear-gradient(45deg, #0ea5e9, #06b6d4);
   color: white;
   border-radius: 50%;
   display: flex;
@@ -316,9 +316,9 @@ const UserMenu = styled.div`
   top: calc(100% + 10px);
   right: 0;
   width: 220px;
-  background: white;
+  background: #1e293b;
   border-radius: 8px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
   padding: 10px 0;
   opacity: 0;
   visibility: hidden;
@@ -333,7 +333,7 @@ const UserMenu = styled.div`
     right: 17px;
     width: 12px;
     height: 12px;
-    background: white;
+    background: #1e293b;
     transform: rotate(45deg);
     box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.04);
   }
@@ -341,23 +341,23 @@ const UserMenu = styled.div`
 
 const UserInfo = styled.div`
   padding: 10px 15px;
-  border-bottom: 1px solid #f1f5f9;
+  border-bottom: 1px solid #334155;
 `;
 
 const UserName = styled.div`
   font-weight: 600;
-  color: #2d3748;
+  color: #e2e8f0;
   margin-bottom: 4px;
 `;
 
 const UserRole = styled.div`
   font-size: 0.75rem;
-  color: #718096;
+  color: #64748b;
 `;
 
 const UserMenuDivider = styled.div`
   height: 1px;
-  background-color: #f1f5f9;
+  background-color: #334155;
   margin: 8px 0;
 `;
 
@@ -365,13 +365,13 @@ const UserMenuItem = styled(Link)`
   display: flex;
   align-items: center;
   padding: 10px 15px;
-  color: #4a5568;
+  color: #94a3b8;
   text-decoration: none;
   transition: background-color 0.2s;
   font-size: 0.9rem;
 
   &:hover {
-    background-color: #f8fafc;
+    background-color: #334155;
   }
 `;
 
@@ -389,7 +389,7 @@ const UserMenuButton = styled.button`
   font-size: 0.9rem;
 
   &:hover {
-    background-color: #f8fafc;
+    background-color: #334155;
   }
 `;
 

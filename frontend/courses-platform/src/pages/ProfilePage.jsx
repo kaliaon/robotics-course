@@ -375,7 +375,7 @@ const PageWrapper = styled.div`
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: #f8fafc;
+  background-color: #0f172a;
 `;
 
 const MainContent = styled.main`
@@ -386,7 +386,7 @@ const MainContent = styled.main`
 const ProfileContainer = styled.div`
   max-width: 1000px;
   margin: 0 auto;
-  background-color: white;
+  background-color: #1e293b;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   overflow: hidden;
@@ -394,11 +394,11 @@ const ProfileContainer = styled.div`
 
 const ProfileHeader = styled.div`
   padding: 30px;
-  border-bottom: 1px solid #f1f5f9;
+  border-bottom: 1px solid #334155;
 
   h1 {
     font-size: 1.75rem;
-    color: #2d3748;
+    color: #e2e8f0;
     margin: 0;
   }
 `;
@@ -406,7 +406,7 @@ const ProfileHeader = styled.div`
 const ErrorMessage = styled.div`
   margin: 20px 30px 0;
   padding: 12px 16px;
-  background-color: #fef2f2;
+  background-color: rgba(239, 68, 68, 0.1);
   color: #b91c1c;
   border-radius: 6px;
   font-size: 0.9rem;
@@ -416,8 +416,8 @@ const ErrorMessage = styled.div`
 const SuccessMessage = styled.div`
   margin: 20px 30px 0;
   padding: 12px 16px;
-  background-color: #f0fdf4;
-  color: #166534;
+  background-color: rgba(34, 197, 94, 0.1);
+  color: #4ade80;
   border-radius: 6px;
   font-size: 0.9rem;
   border-left: 4px solid #22c55e;
@@ -435,7 +435,7 @@ const LoadingSpinner = styled.div`
   width: 40px;
   height: 40px;
   border: 4px solid rgba(0, 0, 0, 0.1);
-  border-left-color: #3066be;
+  border-left-color: #0ea5e9;
   border-radius: 50%;
   animation: spin 1s linear infinite;
   margin-bottom: 20px;
@@ -449,7 +449,7 @@ const LoadingSpinner = styled.div`
 
 const LoadingText = styled.p`
   font-size: 1rem;
-  color: #718096;
+  color: #64748b;
 `;
 
 const ProfileGrid = styled.div`
@@ -463,11 +463,11 @@ const ProfileGrid = styled.div`
 
 const ProfileSidebar = styled.aside`
   padding: 30px;
-  border-right: 1px solid #f1f5f9;
+  border-right: 1px solid #334155;
 
   @media (max-width: 768px) {
     border-right: none;
-    border-bottom: 1px solid #f1f5f9;
+    border-bottom: 1px solid #334155;
   }
 `;
 
@@ -482,7 +482,7 @@ const ProfileImage = styled.div`
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  background: linear-gradient(45deg, #3066be, #119da4);
+  background: linear-gradient(45deg, #0ea5e9, #06b6d4);
   color: white;
   font-size: 3rem;
   font-weight: 600;
@@ -493,7 +493,7 @@ const ProfileImage = styled.div`
 `;
 
 const EditButton = styled.button`
-  background-color: #3066be;
+  background-color: #0ea5e9;
   color: white;
   border: none;
   border-radius: 6px;
@@ -504,19 +504,19 @@ const EditButton = styled.button`
   transition: background-color 0.2s;
 
   &:hover {
-    background-color: #254e99;
+    background-color: #0284c7;
   }
 `;
 
 const StatsContainer = styled.div`
-  background-color: #f8fafc;
+  background-color: #0f172a;
   border-radius: 10px;
   padding: 20px;
 `;
 
 const StatsTitle = styled.h3`
   font-size: 1rem;
-  color: #2d3748;
+  color: #e2e8f0;
   margin: 0 0 15px;
 `;
 
@@ -524,7 +524,7 @@ const StatItem = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 8px 0;
-  border-bottom: 1px solid #e2e8f0;
+  border-bottom: 1px solid #334155;
 
   &:last-child {
     border-bottom: none;
@@ -533,13 +533,13 @@ const StatItem = styled.div`
 
 const StatLabel = styled.div`
   font-size: 0.9rem;
-  color: #718096;
+  color: #94a3b8;
 `;
 
 const StatValue = styled.div`
   font-size: 0.9rem;
   font-weight: 600;
-  color: #2d3748;
+  color: #e2e8f0;
 `;
 
 const ProfileDetails = styled.div`
@@ -558,10 +558,10 @@ const InfoSection = styled.div`
 
 const InfoTitle = styled.h3`
   font-size: 1.1rem;
-  color: #2d3748;
+  color: #e2e8f0;
   margin: 0 0 20px;
   padding-bottom: 10px;
-  border-bottom: 1px solid #f1f5f9;
+  border-bottom: 1px solid #334155;
 `;
 
 const InfoGrid = styled.div`
@@ -574,19 +574,19 @@ const InfoItem = styled.div``;
 
 const InfoLabel = styled.div`
   font-size: 0.85rem;
-  color: #718096;
+  color: #94a3b8;
   margin-bottom: 5px;
 `;
 
 const InfoValue = styled.div`
   font-size: 1rem;
-  color: #2d3748;
+  color: #e2e8f0;
   font-weight: 500;
 `;
 
 const InfoBio = styled.p`
   font-size: 0.95rem;
-  color: #4a5568;
+  color: #94a3b8;
   line-height: 1.6;
   margin: 0;
 `;
@@ -599,10 +599,10 @@ const FormSection = styled.div`
 
 const SectionTitle = styled.h3`
   font-size: 1.1rem;
-  color: #2d3748;
+  color: #e2e8f0;
   margin: 0 0 20px;
   padding-bottom: 10px;
-  border-bottom: 1px solid #f1f5f9;
+  border-bottom: 1px solid #334155;
 `;
 
 const FormGrid = styled.div`
@@ -623,25 +623,27 @@ const Label = styled.label`
   display: block;
   font-size: 0.9rem;
   font-weight: 500;
-  color: #4a5568;
+  color: #94a3b8;
   margin-bottom: 5px;
 `;
 
 const Input = styled.input`
   width: 100%;
   padding: 10px 12px;
-  border: 1px solid #e2e8f0;
+  border: 1px solid #334155;
   border-radius: 6px;
   font-size: 0.95rem;
+  background-color: #0f172a;
+  color: #e2e8f0;
   transition: border-color 0.2s;
 
   &:focus {
     outline: none;
-    border-color: #3066be;
+    border-color: #0ea5e9;
   }
 
   &:disabled {
-    background-color: #f1f5f9;
+    background-color: #334155;
     cursor: not-allowed;
   }
 `;
@@ -649,22 +651,24 @@ const Input = styled.input`
 const Textarea = styled.textarea`
   width: 100%;
   padding: 10px 12px;
-  border: 1px solid #e2e8f0;
+  border: 1px solid #334155;
   border-radius: 6px;
   font-size: 0.95rem;
   font-family: inherit;
   resize: vertical;
+  background-color: #0f172a;
+  color: #e2e8f0;
   transition: border-color 0.2s;
 
   &:focus {
     outline: none;
-    border-color: #3066be;
+    border-color: #0ea5e9;
   }
 `;
 
 const HelpText = styled.div`
   font-size: 0.8rem;
-  color: #718096;
+  color: #64748b;
   margin-top: 5px;
 `;
 
@@ -685,22 +689,22 @@ const Button = styled.button`
 `;
 
 const CancelButton = styled(Button)`
-  background-color: #f1f5f9;
-  color: #64748b;
-  border: 1px solid #e2e8f0;
+  background-color: #334155;
+  color: #94a3b8;
+  border: 1px solid #475569;
 
   &:hover {
-    background-color: #e2e8f0;
+    background-color: #475569;
   }
 `;
 
 const SaveButton = styled(Button)`
-  background-color: #3066be;
+  background-color: #0ea5e9;
   color: white;
   border: none;
 
   &:hover {
-    background-color: #254e99;
+    background-color: #0284c7;
   }
 
   &:disabled {

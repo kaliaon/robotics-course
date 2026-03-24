@@ -57,7 +57,7 @@ const MainPage = () => {
       <HeroSection>
         <HeroContent>
           <BrandTitle>
-            Oqu<BrandAccent>Space</BrandAccent>
+            Robo<BrandAccent>Mentor</BrandAccent>
           </BrandTitle>
           <HeroTitle>Білім алу әлеміне қош келдіңіз</HeroTitle>
           <HeroSubtitle>
@@ -98,11 +98,11 @@ const MainPage = () => {
                     </CourseCardDescription>
                     <CourseCardMeta>
                       <MetaItem>
-                        <MetaIcon>📚</MetaIcon> {course.lessons_count || 0}{" "}
+                        <MetaIcon>≡</MetaIcon> {course.lessons_count || 0}{" "}
                         сабақ
                       </MetaItem>
                       <MetaItem>
-                        <MetaIcon>⏱️</MetaIcon> {course.duration || "2 сағат"}
+                        <MetaIcon>◷</MetaIcon> {course.duration || "2 сағат"}
                       </MetaItem>
                     </CourseCardMeta>
                     <CourseCardButton>Курсты оқу</CourseCardButton>
@@ -111,7 +111,7 @@ const MainPage = () => {
               ))
             ) : (
               <EmptyState>
-                <EmptyStateIcon>📚</EmptyStateIcon>
+                <EmptyStateIcon>∅</EmptyStateIcon>
                 <EmptyStateText>Қолжетімді курстар табылмады</EmptyStateText>
                 <EmptyStateSubtext>Кейінірек қайта келіңіз</EmptyStateSubtext>
               </EmptyState>
@@ -124,21 +124,21 @@ const MainPage = () => {
         <SectionTitle>Біздің платформаның артықшылықтары</SectionTitle>
         <FeaturesGrid>
           <FeatureCard>
-            <FeatureIcon>🎓</FeatureIcon>
+            <FeatureIcon>◆</FeatureIcon>
             <FeatureTitle>Сапалы білім</FeatureTitle>
             <FeatureDescription>
               Білікті оқытушылар ұсынған сапалы білім ресурстарын алыңыз
             </FeatureDescription>
           </FeatureCard>
           <FeatureCard>
-            <FeatureIcon>🧠</FeatureIcon>
+            <FeatureIcon>◇</FeatureIcon>
             <FeatureTitle>Қабылдауға ыңғайлы</FeatureTitle>
             <FeatureDescription>
               Материалдар түсінікті және меңгеруге оңай форматта берілген
             </FeatureDescription>
           </FeatureCard>
           <FeatureCard>
-            <FeatureIcon>📱</FeatureIcon>
+            <FeatureIcon>▣</FeatureIcon>
             <FeatureTitle>Қолжетімділік</FeatureTitle>
             <FeatureDescription>
               Кез келген құрылғыдан оқи аласыз - компьютер, планшет немесе
@@ -146,7 +146,7 @@ const MainPage = () => {
             </FeatureDescription>
           </FeatureCard>
           <FeatureCard>
-            <FeatureIcon>🚀</FeatureIcon>
+            <FeatureIcon>▲</FeatureIcon>
             <FeatureTitle>Тез нәтиже</FeatureTitle>
             <FeatureDescription>
               Практикалық тапсырмалар арқылы жаңа дағдыларды тез меңгересіз
@@ -158,7 +158,7 @@ const MainPage = () => {
       <Footer>
         <FooterContent>
           <FooterBrand>
-            Oqu<BrandAccent>Space</BrandAccent>
+            Robo<BrandAccent>Mentor</BrandAccent>
           </FooterBrand>
           <FooterLinks>
             <FooterLink to="/about">Біз туралы</FooterLink>
@@ -167,7 +167,7 @@ const MainPage = () => {
             <FooterLink to="/privacy">Құпиялылық саясаты</FooterLink>
           </FooterLinks>
           <FooterCopyright>
-            © {new Date().getFullYear()} OquSpace. Барлық құқықтар қорғалған.
+            © {new Date().getFullYear()} RoboMentor. Барлық құқықтар қорғалған.
           </FooterCopyright>
         </FooterContent>
       </Footer>
@@ -182,11 +182,11 @@ const PageWrapper = styled.div`
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: #f8fafc;
+  background-color: #0f172a;
 `;
 
 const HeroSection = styled.section`
-  background: linear-gradient(135deg, #3066be 0%, #119da4 100%);
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
   padding: 80px 20px;
   color: white;
   text-align: center;
@@ -204,7 +204,7 @@ const BrandTitle = styled.h1`
 `;
 
 const BrandAccent = styled.span`
-  color: #8de4ff;
+  color: #06b6d4;
 `;
 
 const HeroTitle = styled.h2`
@@ -235,7 +235,7 @@ const SearchInput = styled.input`
 `;
 
 const SearchButton = styled.button`
-  background-color: #ff6b6b;
+  background-color: #0ea5e9;
   color: white;
   border: none;
   border-radius: 0 8px 8px 0;
@@ -245,7 +245,7 @@ const SearchButton = styled.button`
   transition: background-color 0.2s;
 
   &:hover {
-    background-color: #ff5252;
+    background-color: #0284c7;
   }
 `;
 
@@ -259,14 +259,14 @@ const MainContent = styled.main`
 const SectionTitle = styled.h2`
   font-size: 2rem;
   font-weight: 700;
-  color: #2d3748;
+  color: #e2e8f0;
   text-align: center;
   margin: 0 0 10px;
 `;
 
 const SectionSubtitle = styled.p`
   font-size: 1.1rem;
-  color: #718096;
+  color: #64748b;
   text-align: center;
   margin: 0 0 40px;
 `;
@@ -280,17 +280,17 @@ const CoursesContainer = styled.div`
 const CourseCard = styled(Link)`
   display: flex;
   flex-direction: column;
-  background: white;
+  background: #1e293b;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s, box-shadow 0.3s;
   text-decoration: none;
   color: inherit;
 
   &:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
   }
 `;
 
@@ -306,7 +306,7 @@ const CourseCardImagePlaceholder = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(45deg, #3066be, #119da4);
+  background: linear-gradient(45deg, #0ea5e9, #06b6d4);
 `;
 
 const CourseCardContent = styled.div`
@@ -319,13 +319,13 @@ const CourseCardContent = styled.div`
 const CourseCardTitle = styled.h3`
   font-size: 1.25rem;
   font-weight: 600;
-  color: #2d3748;
+  color: #e2e8f0;
   margin: 0 0 10px;
 `;
 
 const CourseCardDescription = styled.p`
   font-size: 0.9rem;
-  color: #718096;
+  color: #94a3b8;
   margin: 0 0 15px;
   flex: 1;
 `;
@@ -339,7 +339,7 @@ const MetaItem = styled.div`
   display: flex;
   align-items: center;
   font-size: 0.85rem;
-  color: #718096;
+  color: #64748b;
   margin-right: 15px;
 `;
 
@@ -348,7 +348,7 @@ const MetaIcon = styled.span`
 `;
 
 const CourseCardButton = styled.span`
-  background-color: #3066be;
+  background-color: #0ea5e9;
   color: white;
   padding: 10px 0;
   border-radius: 6px;
@@ -358,7 +358,7 @@ const CourseCardButton = styled.span`
   transition: background-color 0.2s;
 
   &:hover {
-    background-color: #254e99;
+    background-color: #0284c7;
   }
 `;
 
@@ -374,7 +374,7 @@ const LoadingSpinner = styled.div`
   width: 40px;
   height: 40px;
   border: 4px solid rgba(0, 0, 0, 0.1);
-  border-left-color: #3066be;
+  border-left-color: #0ea5e9;
   border-radius: 50%;
   animation: spin 1s linear infinite;
   margin-bottom: 20px;
@@ -388,15 +388,15 @@ const LoadingSpinner = styled.div`
 
 const LoadingText = styled.p`
   font-size: 1.1rem;
-  color: #718096;
+  color: #64748b;
 `;
 
 const ErrorMessage = styled.div`
-  color: #e53e3e;
-  background-color: #fff5f5;
+  color: #ef4444;
+  background-color: rgba(239, 68, 68, 0.1);
   padding: 16px;
   border-radius: 8px;
-  border-left: 4px solid #e53e3e;
+  border-left: 4px solid #ef4444;
   margin-bottom: 30px;
   font-size: 0.95rem;
 `;
@@ -417,18 +417,18 @@ const EmptyStateIcon = styled.div`
 
 const EmptyStateText = styled.h3`
   font-size: 1.25rem;
-  color: #2d3748;
+  color: #e2e8f0;
   margin: 0 0 10px;
 `;
 
 const EmptyStateSubtext = styled.p`
   font-size: 1rem;
-  color: #718096;
+  color: #64748b;
 `;
 
 const FeaturesSection = styled.section`
   padding: 80px 20px;
-  background-color: #f1f5f9;
+  background-color: #1e293b;
 `;
 
 const FeaturesGrid = styled.div`
@@ -440,33 +440,34 @@ const FeaturesGrid = styled.div`
 `;
 
 const FeatureCard = styled.div`
-  background: white;
+  background: #0f172a;
   padding: 30px;
   border-radius: 12px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   text-align: center;
 `;
 
 const FeatureIcon = styled.div`
   font-size: 36px;
   margin-bottom: 20px;
+  color: #0ea5e9;
 `;
 
 const FeatureTitle = styled.h3`
   font-size: 1.25rem;
   font-weight: 600;
-  color: #2d3748;
+  color: #e2e8f0;
   margin: 0 0 15px;
 `;
 
 const FeatureDescription = styled.p`
   font-size: 0.95rem;
-  color: #718096;
+  color: #94a3b8;
   margin: 0;
 `;
 
 const Footer = styled.footer`
-  background-color: #2d3748;
+  background-color: #020617;
   color: white;
   padding: 60px 20px 30px;
   margin-top: auto;
@@ -494,7 +495,7 @@ const FooterLinks = styled.div`
 `;
 
 const FooterLink = styled(Link)`
-  color: white;
+  color: #64748b;
   text-decoration: none;
   margin: 0 15px 10px;
   font-size: 0.95rem;
@@ -508,5 +509,5 @@ const FooterLink = styled(Link)`
 
 const FooterCopyright = styled.div`
   font-size: 0.85rem;
-  opacity: 0.6;
+  color: #475569;
 `;

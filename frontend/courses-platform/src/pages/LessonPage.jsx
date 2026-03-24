@@ -4,8 +4,9 @@ import Quiz from "../components/Quiz";
 import styled from "styled-components";
 import Header from "../components/Header";
 import { courseService } from "../services";
-import { AIChatButton } from "../components/index";
+// import { AIChatButton } from "../components/index";
 import { convertToEmbedUrl, isValidYouTubeUrl } from "../utils/videoUtils";
+import ReactMarkdown from "react-markdown";
 
 const LessonPage = () => {
   const navigate = useNavigate();
@@ -171,6 +172,12 @@ const LessonPage = () => {
             )}
           </VideoContainer>
 
+          {data.content && (
+            <MarkdownContainer>
+              <ReactMarkdown>{data.content}</ReactMarkdown>
+            </MarkdownContainer>
+          )}
+
           {data.has_test ? (
             testLoading ? (
               <QuizPlaceholder>Тест жүктелуде...</QuizPlaceholder>
@@ -190,11 +197,11 @@ const LessonPage = () => {
             </QuizPlaceholder>
           )}
         </ContentContainer>
-        <AIChatButton
+        {/* <AIChatButton
           courseId={courseId}
           lessonId={lessonId}
           lessonTitle={data.title}
-        />
+        /> */}
       </Container>
     </>
   );
@@ -207,7 +214,7 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 40px 20px;
-  background: #f9f9f9;
+  background: #0f172a;
   min-height: calc(100vh - 70px);
   max-width: 1200px;
   margin: 0 auto;
@@ -227,18 +234,18 @@ const BackButton = styled.button`
   left: 20px;
   display: flex;
   align-items: center;
-  background: #ffffff;
+  background: #1e293b;
   border: none;
   padding: 10px 15px;
   border-radius: 5px;
   font-weight: 500;
-  color: #3066be;
+  color: #0ea5e9;
   cursor: pointer;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: all 0.2s ease;
 
   &:hover {
-    background: #f0f5ff;
+    background: #334155;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
     transform: translateY(-1px);
   }
@@ -251,7 +258,7 @@ const BackIcon = styled.span`
 
 const Title = styled.h1`
   font-size: 2rem;
-  color: #3066be;
+  color: #0ea5e9;
   margin-bottom: 30px;
   text-align: center;
 `;
@@ -286,7 +293,7 @@ const VideoContainer = styled.div`
 
 const LoadingText = styled.p`
   font-size: 18px;
-  color: #333;
+  color: #94a3b8;
   margin-top: 100px;
 `;
 
@@ -299,7 +306,7 @@ const ErrorContainer = styled.div`
   width: 100%;
   max-width: 600px;
   margin: 80px auto;
-  background: white;
+  background: #1e293b;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 `;
@@ -313,7 +320,7 @@ const ErrorText = styled.p`
 
 const ErrorButton = styled.button`
   padding: 10px 20px;
-  background: #3066be;
+  background: #0ea5e9;
   color: white;
   border: none;
   border-radius: 5px;
@@ -322,7 +329,7 @@ const ErrorButton = styled.button`
   transition: background 0.2s;
 
   &:hover {
-    background: #254d95;
+    background: #0284c7;
   }
 `;
 
@@ -331,12 +338,54 @@ const QuizPlaceholder = styled.div`
   max-width: 800px;
   margin-top: 20px;
   padding: 30px;
-  background-color: #ffffff;
+  background-color: #1e293b;
   border-radius: 10px;
   text-align: center;
-  color: #666;
+  color: #94a3b8;
   font-size: 16px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+`;
+
+const MarkdownContainer = styled.div`
+  width: 100%;
+  max-width: 900px;
+  margin-bottom: 40px;
+  padding: 20px 30px;
+  background-color: #1e293b;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  line-height: 1.8;
+  color: #e2e8f0;
+  font-size: 16px;
+
+  h1, h2, h3, h4, h5, h6 {
+    color: #0ea5e9;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    margin-bottom: 12px;
+  }
+
+  code {
+    background: #334155;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+
+  pre {
+    background: #334155;
+    padding: 15px;
+    border-radius: 8px;
+    overflow-x: auto;
+  }
+
+  ul, ol {
+    margin-left: 20px;
+    margin-bottom: 12px;
+  }
 `;
 
 const VideoWarning = styled.div`
