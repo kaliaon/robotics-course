@@ -14,6 +14,7 @@ class Lesson(models.Model):
     course = models.ForeignKey(Course, on_delete=models.CASCADE, related_name="lessons")
     title = models.CharField(max_length=255)
     video_url = models.URLField()
+    content = models.TextField(blank=True, default="")
     quiz = models.JSONField(default=dict, help_text="Deprecated: Use Test model instead")
     created_at = models.DateTimeField(auto_now_add=True)
     
